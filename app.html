@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Tracker App - Open-Meteo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="index.html">← Back to Portfolio</a>
+  </nav>
+
+  <main class="app-container">
+    <h2>Weather Tracker</h2>
+    <p class="sub-heading">Powered by Open-Meteo API</p>
+    
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name (e.g., Butuan, Manila, Tokyo)">
+      <button id="searchBtn">Search Weather</button>
+    </div>
+
+    <div id="statusMessage" class="status-msg hidden"></div>
+
+    <section id="weatherResult" class="result-card hidden">
+      <h3 id="cityName">--</h3>
+      <p id="countryName" class="country-label">--</p>
+      <div id="temperature" class="temp-display">-- °C</div>
+      <p id="weatherCond" class="cond-text">--</p>
+      
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="label">Wind Speed</span>
+          <span id="wind" class="value">-- km/h</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Wind Direction</span>
+          <span id="windDir" class="value">--°</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
