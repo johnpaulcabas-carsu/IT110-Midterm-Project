@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #1a202c;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.top-nav {
+  max-width: 700px;
+  margin: 0 auto 15px auto;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.container, .app-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.sub-heading {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.btn-launch, #searchBtn {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-launch:hover, #searchBtn:hover {
+  background-color: #1d4ed8;
+}
+
+.cta-wrapper {
+  margin-top: 15px;
+}
+
+.team-section {
+  margin-top: 30px;
+}
+
+.member-card {
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  background-color: #f8fafc;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px auto;
+  display: block;
+  border: 3px solid #2563eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.role {
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.search-box input:focus {
+  outline: 2px solid #2563eb;
+}
+
+.result-card {
+  text-align: center;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.country-label {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.temp-display {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 10px 0;
+}
+
+.cond-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.details-grid {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-item .label {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.detail-item .value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.status-msg {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.status-msg.info {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.status-msg.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.hidden {
+  display: none;
+}
